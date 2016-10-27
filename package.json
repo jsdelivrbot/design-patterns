@@ -1,0 +1,24 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "scripts": {
+    "build": "rollup src/main.ts --output build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonDerenivsky/design-patterns.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonDerenivsky/design-patterns/issues"
+  },
+  "homepage": "https://github.com/antonDerenivsky/design-patterns#readme",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-typescript": "^0.8.1"
+  }
+}

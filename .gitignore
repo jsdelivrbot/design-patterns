@@ -1,0 +1,12 @@
+# NODE FILES
+node_modules
+
+# DIST
+build
+
+# OS GENERATED FILES
+.DS_Store
+.DS_Store?
+
+# LOGS
+*.log
