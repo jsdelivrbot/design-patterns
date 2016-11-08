@@ -1,5 +1,5 @@
-import foo from './foo.ts';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
-export default function () {
-  console.log(foo);
-}
+import { AppMdl } from './app'
+
+platformBrowserDynamic().bootstrapModule(AppMdl)
