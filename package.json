@@ -5,7 +5,6 @@
   "main": "rollup.config.js",
   "scripts": {
     "build": "rollup src/main.ts --output build/bundle.js",
-
     "server": "webpack-dev-server --inline --progress",
     "start": "npm run server"
   },
@@ -23,7 +22,6 @@
     "babel-preset-es2015-rollup": "^1.2.0",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-typescript": "^0.8.1",
-
     "@types/core-js": "^0.9.34",
     "@types/hammerjs": "^2.0.33",
     "@types/node": "^6.0.38",

@@ -1,11 +1,18 @@
-import { NgModule }                     from '@angular/core'
-import { BrowserModule }                from '@angular/platform-browser'
+import { NgModule }         from '@angular/core';
+import { BrowserModule }    from '@angular/platform-browser';
+import { RouterModule }     from '@angular/router';
 
-import { AppCmp }                       from './app.cmp'
+import { AppComponent }     from './app.component';
+import { ComponentsModule } from './components';
+import { ROUTES }           from './app.routes';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppCmp ],
-  bootstrap:    [ AppCmp ]
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    ComponentsModule,
+  ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ],
 })
-export class AppMdl {}
+export class AppModule {}
