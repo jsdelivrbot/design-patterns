@@ -1,7 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { SingletoneComponent }  from './components/creational/singleton';
+import { HomeComponent }        from './components/home/home.component';
 
-export const ROUTES: Routes = [
-  { path: '', component: SingletoneComponent }
+const ROUTES: Routes = [
+  { path: '', component: HomeComponent }
 ];
+
+export const ROUTER_MODULE = RouterModule.forRoot(ROUTES, { useHash: true });

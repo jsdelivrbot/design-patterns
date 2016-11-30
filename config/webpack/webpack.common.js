@@ -53,6 +53,8 @@ module.exports = {
       query: {
         'ignoreDiagnostics': []
       }
-    }]
+    }],
+    
+    exprContextCritical: false, // Webpack 2 warnings
   }
 }

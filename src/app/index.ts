@@ -1,15 +1,14 @@
 import { NgModule }         from '@angular/core';
 import { BrowserModule }    from '@angular/platform-browser';
-import { RouterModule }     from '@angular/router';
 
 import { AppComponent }     from './app.component';
 import { ComponentsModule } from './components';
-import { ROUTES }           from './app.routes';
+import { ROUTER_MODULE }    from './app.routes';
 
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES, { useHash: true }),
+    ROUTER_MODULE,
     ComponentsModule,
   ],
   declarations: [ AppComponent ],
