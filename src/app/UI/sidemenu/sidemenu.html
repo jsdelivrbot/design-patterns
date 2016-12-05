@@ -1,0 +1,9 @@
+<ul *ngFor="let type of patterns">
+  <li (click)="toggleList(type)" class="header">{{type.name}}</li>
+
+  <ul [@heroState]="type.state">
+    <li *ngFor="let pattern of type.resources">
+      <a routerLink="{{pattern.path}}">{{pattern.name}}</a>
+    </li>
+  </ul>
+</ul>

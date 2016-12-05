@@ -1,0 +1,1 @@
+export { SidemenuModule } from './sidemenu';

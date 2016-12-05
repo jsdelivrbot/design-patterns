@@ -1,11 +1,19 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
-const styles: string[] =[require('./app.component.sass')];
+import { PATTERNS }  from "./patterns-list";
+
+const styles: string[] = [require('./app.sass')];
 
 @Component({
   selector: 'app',
-  template: `<router-outlet></router-outlet>`,
-  encapsulation: ViewEncapsulation.None,
+  template: `
+    <sidemenu [patterns]="patterns"></sidemenu>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  `,
   styles,
 })
-export class AppComponent {}
+export class AppComponent {
+  private patterns = PATTERNS;
+}
