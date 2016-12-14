@@ -1,1 +1,2 @@
-export { SidemenuModule } from './sidemenu';
+export * from './sidemenu';
+export * from './pattern-view';
