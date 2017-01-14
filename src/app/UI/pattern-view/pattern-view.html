@@ -1,1 +1,15 @@
-pattern-view
+<div class="pattern">
+  {{ data.name }} <br><br>
+  {{ data.definition }}
+  {{ data.diagram }}
+
+  <pre class="prettyprint">
+    {{ data.codePrint }}
+  </pre>
+
+  <button type="button" name="button" (click)="test()">TEST</button>
+</div>
+
+<div class="output">
+  Output...
+</div>

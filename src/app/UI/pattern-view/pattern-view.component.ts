@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { animations }       from "./animations";
+import { animations } from "./animations";
 
 const styles: string[] = [require('./pattern-view.sass')];
 const template: string = require('./pattern-view.html');
@@ -11,4 +11,11 @@ const template: string = require('./pattern-view.html');
   styles,
   animations,
 })
-export class PatternViewComponent {}
+export class PatternViewComponent {
+  @Input() data;
+  @Output() runner = new EventEmitter<any>();
+
+  private test() {
+    this.runner.emit();
+  }
+}
