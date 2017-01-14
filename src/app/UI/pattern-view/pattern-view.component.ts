@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { animations } from "./animations";
+import { LogService } from "../../shared/log";
 
 const styles: string[] = [require('./pattern-view.sass')];
 const template: string = require('./pattern-view.html');
@@ -14,6 +15,13 @@ const template: string = require('./pattern-view.html');
 export class PatternViewComponent {
   @Input() data;
   @Output() runner = new EventEmitter<any>();
+
+  private results;
+
+  constructor(private log: LogService) {
+    log.streams$
+      .subscribe(results => this.results = results)
+  }
 
   private test() {
     this.runner.emit();

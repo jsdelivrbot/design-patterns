@@ -3,7 +3,7 @@
   <!-- {{ data.definition }}
   {{ data.diagram }} -->
 
-  <pre class="prettyprint">
+  <pre class="box prettyprint">
     {{ data.codePrint }}
   </pre>
   <br>
@@ -11,6 +11,8 @@
 </div>
 
 <div class="output">
-  Output
-  <pre class="prettyprint"></pre>
+  Log
+  <pre class="box prettyprint">
+    <p *ngFor="let result of results">{{ result }}</p>
+  </pre>
 </div>
