@@ -1,15 +1,16 @@
 <div class="pattern">
-  {{ data.name }} <br><br>
-  {{ data.definition }}
-  {{ data.diagram }}
+  {{ data.name }}
+  <!-- {{ data.definition }}
+  {{ data.diagram }} -->
 
   <pre class="prettyprint">
     {{ data.codePrint }}
   </pre>
-
+  <br>
   <button type="button" name="button" (click)="test()">TEST</button>
 </div>
 
 <div class="output">
-  Output...
+  Output
+  <pre class="prettyprint"></pre>
 </div>
