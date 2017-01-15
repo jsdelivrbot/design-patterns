@@ -2,7 +2,7 @@ import { Component }  from '@angular/core';
 
 import { data }       from "./assets/data";
 import { Singleton }  from "./assets/singleton";
-import { LogService } from "../../../../shared/log";
+import { LogService } from "../../../shared/log";
 
 const template: string = require('./singleton.html');
 

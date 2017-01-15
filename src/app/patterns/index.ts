@@ -3,7 +3,7 @@ import { NgModule }         from '@angular/core';
 import { BehavioralModule } from './behavioral';
 import { CreationalModule } from './creational';
 import { StructuralModule } from './structural';
-import { LogService }       from '../../shared/log';
+import { LogService }       from '../shared/log';
 
 @NgModule({
   imports: [
