@@ -5,6 +5,8 @@ import { CreationalModule } from './creational';
 import { StructuralModule } from './structural';
 import { LogService }       from '../shared/log';
 
+export * from './patterns-list';
+
 @NgModule({
   imports: [
     BehavioralModule,

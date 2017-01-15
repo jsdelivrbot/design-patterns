@@ -1,4 +1,4 @@
-export let PATTERNS = [{
+export let patternsList = [{
     state: 'inactive',
     name: "CREATIONAL",
     resources: [

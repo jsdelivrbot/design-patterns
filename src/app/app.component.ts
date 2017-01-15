@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { PATTERNS }  from "./patterns-list";
+import { patternsList }  from "./patterns";
 
 const styles: string[] = [require('./app.sass')];
 
@@ -15,5 +15,5 @@ const styles: string[] = [require('./app.sass')];
   styles,
 })
 export class AppComponent {
-  private patterns = PATTERNS;
+  private patterns = patternsList;
 }
