@@ -1,8 +1,8 @@
-import { Component }      from '@angular/core';
+import { Component }  from '@angular/core';
 
-import { data }           from "./assets/data";
-import { FactoryMethod }  from "./assets/factory-method";
-import { LogService }     from "../../../shared/log";
+import { data }       from "./assets/data";
+import { output }     from "./assets/factory-method";
+import { LogService } from "../../../shared/log";
 
 const template: string = require('./factory-method.html')
 
@@ -16,6 +16,6 @@ export class FactoryMethodComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }
