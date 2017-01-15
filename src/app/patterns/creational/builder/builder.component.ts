@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component }  from '@angular/core';
+
+import { data }       from "./assets/data";
+import { Builder }    from "./assets/builder";
+import { LogService } from "../../../shared/log";
 
 const template: string = require('./builder.html')
 
@@ -6,4 +10,12 @@ const template: string = require('./builder.html')
   selector: 'builder',
   template,
 })
-export class BuilderComponent {}
+export class BuilderComponent {
+  private data = data;
+
+  constructor(private log: LogService) {}
+
+  private onExecute() {
+    this.log.add([ ]);
+  }
+}
