@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component }   from '@angular/core';
+
+import { data }        from "./assets/data";
+import { Interpreter } from "./assets/interpreter";
+import { LogService }  from "../../../shared/log";
 
 const template: string = require('./interpreter.html')
 
@@ -6,4 +10,12 @@ const template: string = require('./interpreter.html')
   selector: 'interpreter',
   template,
 })
-export class InterpreterComponent {}
+export class InterpreterComponent {
+  private data = data;
+
+  constructor(private log: LogService) {}
+
+  private onExecute() {
+    this.log.add([ ]);
+  }
+}

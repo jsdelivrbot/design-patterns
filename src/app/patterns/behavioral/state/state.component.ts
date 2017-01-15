@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component }  from '@angular/core';
+
+import { data }       from "./assets/data";
+import { State }      from "./assets/state";
+import { LogService } from "../../../shared/log";
 
 const template: string = require('./state.html')
 
@@ -6,4 +10,12 @@ const template: string = require('./state.html')
   selector: 'state',
   template,
 })
-export class StateComponent {}
+export class StateComponent {
+  private data = data;
+
+  constructor(private log: LogService) {}
+
+  private onExecute() {
+    this.log.add([ ]);
+  }
+}
