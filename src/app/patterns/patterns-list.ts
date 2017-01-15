@@ -1,5 +1,5 @@
 export let patternsList = [{
-    state: 'inactive',
+    state: 'active',
     name: "CREATIONAL",
     resources: [
       {name: "Abstract factory", path: "abstract-factory"},
@@ -9,7 +9,7 @@ export let patternsList = [{
       {name: "Singleton", path: "singleton"},
     ]
   },{
-    state: 'inactive',
+    state: 'active',
     name: "STRUCTURAL",
     resources: [
       {name: "Adapter", path: "adapter"},
@@ -21,7 +21,7 @@ export let patternsList = [{
       {name: "Proxy", path: "proxy"},
     ]
   },{
-    state: 'inactive',
+    state: 'active',
     name: "BEHAVIORAL",
     resources: [
       {name: "Chain of responsibility", path: "chain-of-responsibility"},

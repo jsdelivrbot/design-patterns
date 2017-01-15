@@ -1,7 +1,7 @@
 import { Component }  from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Mediator }   from "./assets/mediator";
+import { output }     from "./assets/mediator";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./mediator.html')
@@ -16,6 +16,6 @@ export class MediatorComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

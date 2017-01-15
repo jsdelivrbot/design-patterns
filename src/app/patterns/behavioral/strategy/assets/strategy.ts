@@ -1,1 +1,18 @@
-export class Strategy {}
+class Arnold {
+  constructor (private exercise) {}
+
+  do() {
+    return this.exercise();
+  }
+}
+
+let exercise1 = () => "bench press";
+let exercise2 = () => "squads";
+
+const day1 = new Arnold(exercise1);
+const day2 = new Arnold(exercise2);
+
+export const output = [
+  day1.do(),
+  day2.do(),
+];

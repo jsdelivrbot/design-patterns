@@ -1,7 +1,7 @@
 import { Component }  from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Visitor }    from "./assets/visitor";
+import { output }     from "./assets/visitor";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./visitor.html');
@@ -16,6 +16,6 @@ export class VisitorComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

@@ -1,7 +1,7 @@
 import { Component }  from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Strategy }   from "./assets/strategy";
+import { output }     from "./assets/strategy";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./strategy.html')
@@ -16,6 +16,6 @@ export class StrategyComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

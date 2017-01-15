@@ -1,7 +1,7 @@
 import { Component }      from '@angular/core';
 
 import { data }           from "./assets/data";
-import { TemplateMethod } from "./assets/template-method";
+import { output } from "./assets/template-method";
 import { LogService }     from "../../../shared/log";
 
 const template: string = require('./template-method.html')
@@ -16,6 +16,6 @@ export class TemplateMethodComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

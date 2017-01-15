@@ -1,8 +1,8 @@
-import { Component }             from '@angular/core';
+import { Component }  from '@angular/core';
 
-import { data }                  from "./assets/data";
-import { ChainOfResponsibility } from "./assets/chain-of-responsibility";
-import { LogService }            from "../../../shared/log";
+import { data }       from "./assets/data";
+import { output }     from "./assets/chain-of-responsibility";
+import { LogService } from "../../../shared/log";
 
 const template: string = require('./chain-of-responsibility.html')
 
@@ -16,6 +16,6 @@ export class ChainOfResponsibilityComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

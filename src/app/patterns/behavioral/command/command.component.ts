@@ -1,7 +1,7 @@
 import { Component }  from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Command }    from "./assets/command";
+import { output }     from "./assets/command";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./command.html')
@@ -16,6 +16,6 @@ export class CommandComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

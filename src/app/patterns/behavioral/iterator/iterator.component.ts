@@ -1,7 +1,7 @@
 import { Component }  from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Iterator }   from "./assets/iterator";
+import { output }     from "./assets/iterator";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./iterator.html')
@@ -16,6 +16,6 @@ export class IteratorComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }
