@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Bridge }     from "./assets/bridge";
+import { output }     from "./assets/bridge";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./bridge.html')
@@ -16,6 +16,6 @@ export class BridgeComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

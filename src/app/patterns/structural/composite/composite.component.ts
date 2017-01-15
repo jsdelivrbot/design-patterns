@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Composite }  from "./assets/composite";
+import { output }     from "./assets/composite";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./composite.html')
@@ -16,6 +16,6 @@ export class CompositeComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

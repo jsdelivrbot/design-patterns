@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Proxy }      from "./assets/proxy";
+import { output }     from "./assets/proxy";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./proxy.html')
@@ -16,6 +16,6 @@ export class ProxyComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }

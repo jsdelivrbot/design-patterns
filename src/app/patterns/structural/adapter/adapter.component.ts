@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { data }       from "./assets/data";
-import { Adapter }    from "./assets/adapter";
+import { output }     from "./assets/adapter";
 import { LogService } from "../../../shared/log";
 
 const template: string = require('./adapter.html')
@@ -16,6 +16,6 @@ export class AdapterComponent {
   constructor(private log: LogService) {}
 
   private onExecute() {
-    this.log.add([ ]);
+    this.log.add(output);
   }
 }
