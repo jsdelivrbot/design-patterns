@@ -51,10 +51,13 @@ module.exports = {
       test: /\.ts?$/,
       loader: 'ts',
       query: {
-        'ignoreDiagnostics': []
+        'ignoreDiagnostics': [
+          2350,
+          2304,
+        ]
       }
     }],
-    
+
     exprContextCritical: false, // Webpack 2 warnings
   }
 }
