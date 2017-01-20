@@ -12,7 +12,7 @@ const template: string = require('./pattern-view.html');
   styles,
   animations,
 })
-export class PatternViewComponent {
+export class PatternViewComponent implements AfterViewInit {
   @Input() data;
   @Output() runner = new EventEmitter<any>();
 
@@ -20,7 +20,11 @@ export class PatternViewComponent {
 
   constructor(private log: LogService) {
     log.streams$
-      .subscribe(results => this.results = results)
+      .subscribe(results => this.results = results);
+  }
+
+  ngAfterViewInit() {
+    PR.prettyPrint();
   }
 
   private test() {
